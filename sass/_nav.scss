@@ -1,0 +1,18 @@
+.navbar {
+    font-size: 20px;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(23, 48, 59);
+    a {
+        text-decoration: none;
+        color: $primaryColor;
+        margin-right: 16px;
+        &:hover {
+            color:rgb(23, 48, 59);
+            text-decoration: underline;
+        }
+    }
+    .active {
+        color:rgb(23, 48, 59);
+        text-decoration: underline;
+    }
+}

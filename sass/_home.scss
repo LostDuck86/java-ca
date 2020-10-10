@@ -1,0 +1,78 @@
+.filtercontainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.search {
+padding: 0.6rem 2rem;
+width: 50%;
+border: none;
+font-size: 18px;
+}
+
+.home-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .container-card {
+        background: $tertiaryColor;
+        height: 16rem;
+        width: 10rem;
+        margin: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 12px;
+        text-align: center;
+        box-shadow: 5px 5px 10px #a5a5a5;
+        border-radius: 10px;
+        p {
+            font-size: 18px;
+            color: $primaryColor;
+        }
+        h2 {
+            letter-spacing: 3px;
+            text-decoration: underline;
+        }
+        .card-content {
+            flex: 4;
+            max-height: 80%;
+        }
+        h2 {
+            color: $primaryColor;
+        }
+        .card-button {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .favourite-button {
+                padding: 0.5rem 2rem;
+                border-style: none;
+                border:3px solid $secondaryColor;
+                border-radius: 5px;
+                color: black;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                &:hover {
+                    cursor: pointer;
+                    border: 3px solid $quaternaryColor;
+                }
+            }
+            .favourite-button-active {
+                padding: 0.5rem 2rem;
+                border-style: none;
+                border:3px solid $quaternaryColor;
+                background-color: $quaternaryColor;
+                border-radius: 5px;
+                color: white;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                &:hover {
+                    cursor: pointer;
+                    border: 3px solid $secondaryColor;
+                }
+            }
+        }
+    }
+}

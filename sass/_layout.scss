@@ -1,0 +1,12 @@
+body {
+    margin: 0 auto;
+    background-color: $backgroundColor;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+h1 {
+    color: $primaryColor;
+    text-align: center;
+    font-size: 3.5rem;
+}
